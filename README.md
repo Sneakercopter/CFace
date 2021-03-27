@@ -145,7 +145,7 @@ There are also custom modifications made to the [CPPFlow](https://github.com/ser
 ## Future ToDo
 - Improve code comments and documentation
 - Add explicit model execution API
-- Make it easier to change 
+- Make it easier to change input and output tensor dimensions
 - Document build examples for systems outside of CMake
 - Implement comprehensive testing
 - Clean up code memory leaks that may be present
