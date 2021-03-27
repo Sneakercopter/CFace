@@ -52,7 +52,7 @@ This parent folder is what will be passed to the C++ code moving forward.
 Running the preprocessing of images is easy and an example is presented in `main.cpp`, another example is provided in the code below.
 ```c++
 #include <stdlib.h>
-#include "DataPrepare.h"
+#include "lib/DataPrepare.h"
 
 using namespace std;
 using namespace boost::filesystem;
@@ -90,8 +90,8 @@ This `cropped` directory is already in the correct folder and file structure for
 Training models with CFace is abstracted to be very simple. To run training simply, simple add the following lines to the previous Image Preprocessing codebase.
 ```c++
 #include <stdlib.h>
-#include "DataPrepare.h"
-#include "TrainModel.h"
+#include "lib/DataPrepare.h"
+#include "lib/TrainModel.h"
 #include "cppflow/model.h"
 
 using namespace std;
@@ -132,13 +132,13 @@ There is no "best" configuration for these parameters, they are problem dependan
 In order to be as useful as possible, a lot of the heavy interaction with the Tensorflow C API is abstracted away.
 There is some complex interaction with Tensorflow sessions required in order to achieve the result above and can be dived into and modified.
 There are also custom modifications made to the [CPPFlow](https://github.com/serizba/cppflow "CPPFlow") library included with this file. All custom code and modifications are outlined in the list below.
-- `DataPrepare.cpp`
-- `DataPrepare.h`
-- `ExtractFaces.cpp`
-- `ExtractFaces.h`
-- `TrainModel.cpp`
-- `TrainModel.h`
-- `main.cpp`
+- `lib/DataPrepare.cpp`
+- `lib/DataPrepare.h`
+- `lib/ExtractFaces.cpp`
+- `lib/ExtractFaces.h`
+- `lib/TrainModel.cpp`
+- `lib/TrainModel.h`
+- `lib/main.cpp`
 - `cppflow/include/cppflow/model.h` (Modified)
 
 ## Future ToDo
