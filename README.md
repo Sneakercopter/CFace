@@ -1,6 +1,7 @@
 # CFace
 **Training and Evaluating Facial Classification Keras Models using the Tensorflow C API Implemented into a C++ Codebase.**
-##Dependancies
+
+## Dependancies
 - [Tensorflow 2.0+ For Python](https://www.tensorflow.org/install)
 - [Tensorflow C API](https://www.tensorflow.org/install/lang_c "Tensorflow C API")
 - [DLIB for C++](http://dlib.net/compile.html)
